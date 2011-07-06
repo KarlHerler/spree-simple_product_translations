@@ -5,11 +5,11 @@
     <% I18n.available_locales.each do |l| %>
       <p>
         <%= f.globalize_fields_for l do |g| %>
-          <%= g.label :presentation, "#{t(l)}: " %>
+          <%= g.label :presentation, "#{l}: " %>
           <%= g.text_field :presentation %><% if l.to_sym == I18n.default_locale %><span class="required">*</span><% end %>
         <% end %>
       </p>
     <% end %>
   </td>
-  <td class="actions"><%= link_to_remove_fields t("remove"), f %></td>
+  <td class="actions"><%= link_to_remove_fields "remove", f %></td>
 </tr>
