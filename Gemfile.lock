@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spree_simple_product_translations (0.0.3)
+    spree_simple_product_translations (0.0.7.beta3)
       spree_core (>= 0.40.3)
       spree_product_translations (~> 0.0.3)
 
@@ -120,4 +120,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  spree_core (>= 0.40.3)
+  spree_product_translations (~> 0.0.3)
   spree_simple_product_translations!
