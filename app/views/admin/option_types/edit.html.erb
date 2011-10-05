@@ -4,7 +4,7 @@
 <%= form_for(@option_type, :url => object_url, :html => { :method => :put }) do |f| %>
 <fieldset>
   <legend><%= t("editing_option_type") %></legend>
-  <%= render :partial => "form__2", :locals => { :f => f } %>
+  <%= render :partial => "form_2", :locals => { :f => f } %>
   <h3><%= t("option_values") %></h3>
   <table class="index">
     <thead>
